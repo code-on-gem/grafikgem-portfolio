@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — GRAFIKGEM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <a href="index.html">
+                <img src="page-1/logo.PNG" alt="Logo" class="logo">
+            </a>
+        </div>
+        <div class="item">
+            <div class="item-1">
+                <a href="posters.html" class="link">Posters</a>
+            </div>
+            <div class="item-1">
+                <a href="tattoo-designs.html" class="link">Tattoo Design</a>
+            </div>
+            <div class="item-1">
+                <a href="logo-design.html" class="link">Logo Design</a>
+            </div>
+            <div class="item-1">
+                <a href="photography.html" class="link">Photography</a>
+            </div>
+            <div class="item-1">
+                <a href="contact.html" class="link"><b>Contact</b></a>
+            </div>
+            <div class="item-1">
+                <a href="https://www.instagram.com/grafikgem" class="link" target="_blank">
+                    <img src="page-1/instagram.PNG" alt="IG" class="IG">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h2>Let's Work Together!</h2>
+        <form action="#" method="post">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="pronouns">Pronouns</label>
+            <input type="text" id="pronouns" name="pronouns">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="project-scope">Project Scope</label>
+            <textarea id="project-scope" name="project-scope" rows="4" required></textarea>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <label for="how-did-you-find-me">How did you find me?</label>
+            <input type="text" id="how-did-you-find-me" name="how-did-you-find-me" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .contact-form {
+    background-color: #fcf6e3;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #080808;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #080808;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;  /* Increased padding for better alignment */
+    margin: 10px 0;
+    border: 1px solid #080808;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Prevent padding from affecting the width */
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #080808;
+    color: #fcf6e3;
+    padding: 12px 20px;  /* Increased padding for better alignment */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;  /* Make button full width */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.contact-form button:hover {
+    background-color: #fcf6e3;
+    color: #080808;
+    border: 1px solid #080808;
+}
+
+</style>
