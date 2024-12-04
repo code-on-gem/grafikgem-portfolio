@@ -70,6 +70,12 @@ body {
     object-fit: cover;
 }
 
+.IG {
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+}
+
 .container-2 {
     display: flex;
     flex-direction: column;
