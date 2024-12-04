@@ -245,30 +245,46 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Media query for small screens (phones and small tablets) */
-@media (max-width: 768px) {
-    .portfolio, .portfolio-grid, .container, .container-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center; /* Ensures text is centered */
-    }
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
 
-    .portfolio-grid {
-        grid-template-columns: 1fr; /* Stacks items vertically on small screens */
-    }
+.contact-form {
+    width: 100%;
+    max-width: 600px; /* Optional: Set a max width for the form */
+    padding: 20px;
+    background-color: #222; /* Form background */
+    border-radius: 8px;
+    color: #fcf6e3; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-    .container .item, .portfolio-item {
-        width: 100%; /* Makes the items take up the full width of the screen */
-        text-align: center;
-    }
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fcf6e3;
+    color: #080808;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-    .portfolio h2 {
-        font-size: 16px; /* Adjust the font size for headings on smaller screens */
-    }
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #fcf6e3;
+    color: #080808;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-    .container .item .item-1 {
-        padding: 10px 20px; /* Adjust padding on small screens */
-    }
+.contact-form button:hover {
+    background-color: #080808;
+    color: #fcf6e3;
 }
