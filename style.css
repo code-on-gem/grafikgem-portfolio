@@ -15,7 +15,7 @@ body {
 
 .marquee-content {
     display: inline-flex; /* Allows for seamless flex scrolling */
-    animation: scroll-continuous 120s linear infinite; /* Smooth and infinite animation */
+    animation: scroll-continuous 100s linear infinite; /* Smooth and infinite animation */
 }
 
 .marquee-content span {
@@ -40,12 +40,20 @@ body {
     color: #fcf6e3;
 }
 
+.logo, .IG {
+    width: 100%;
+    max-width: 150px;  /* Ensure it doesn't grow too large */
+    height: auto;
+    object-fit: cover;
+}
+
 .blessthisgem {
     font-size: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
+
 .container {
     background-color: #080808;
     display: flex;
@@ -210,4 +218,57 @@ body {
 .portfolio-item:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #080808;  /* Match your background color */
+    color: #fcf6e3;             /* Text color */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;            /* Adjust font size */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;           /* Push footer to the bottom of the page */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fcf6e3;  /* Link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for small screens (phones and small tablets) */
+@media (max-width: 768px) {
+    .portfolio, .portfolio-grid, .container, .container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Ensures text is centered */
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Stacks items vertically on small screens */
+    }
+
+    .container .item, .portfolio-item {
+        width: 100%; /* Makes the items take up the full width of the screen */
+        text-align: center;
+    }
+
+    .portfolio h2 {
+        font-size: 16px; /* Adjust the font size for headings on smaller screens */
+    }
+
+    .container .item .item-1 {
+        padding: 10px 20px; /* Adjust padding on small screens */
+    }
 }
